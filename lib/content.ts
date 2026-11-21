@@ -33,8 +33,8 @@ export const hero = {
 
 export const about = {
   paragraphs: [
-    "With 2+ years of professional experience in cybersecurity, my work focuses on enterprise endpoint and server security, with an emphasis on endpoint management, security compliance, and vulnerability remediation. My experience includes administering HCL BigFix, developing custom Fixlets and Analyses, implementing security solutions, and maintaining endpoint visibility and compliance across diverse environments.",
-    "At PT Q2 Technologies (CTI Group), assigned to CIMB Niaga, I handle day-to-day BigFix operations, troubleshoot endpoint management infrastructure, coordinate security deployments, and support remediation initiatives across Windows, Linux, Unix, and macOS environments. My earlier experience as an L1 SOC Analyst also provided a foundation in SIEM monitoring, alert triage, log analysis, and security incident investigation.",
+    "I’m a Security Engineer with 2+ years of experience in cybersecurity, specializing in enterprise endpoint and server security. My work focuses on endpoint management, security compliance, and vulnerability remediation, with hands-on experience in HCL BigFix administration, custom Fixlet and Analysis development, infrastructure troubleshooting, security deployments, and operational reporting. At PT Q2 Technologies (CTI Group), assigned to CIMB Niaga, I work closely with security and application teams to maintain endpoint visibility, support security initiatives, and deliver regular operational reports across Windows, Linux, Unix, and macOS environments.",
+    "My experience also extends to Security Operations, where I previously worked as an L1 SOC Analyst, supporting security monitoring and incident investigation across multiple client environments, including Sinarmas Group entities (Mining, Sekuritas, and Danamas) and PT Sarana Multi Infrastruktur (Persero). This role involved using ELK Stack and IBM QRadar for SIEM monitoring, alert triage, log analysis, incident investigation, and daily, weekly, and monthly reporting.",
   ],
   focus: [
     "Endpoint Security & Management",
