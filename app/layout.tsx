@@ -4,6 +4,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/content";
 import BackgroundMusic from "@/components/BackgroundMusic";
+import BackToTop from "@/components/BackToTop";
 
 const sans = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap" });
@@ -88,6 +89,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         {children}
         <BackgroundMusic />
+        <BackToTop />
       </body>
     </html>
   );
