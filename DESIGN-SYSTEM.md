@@ -593,7 +593,7 @@ Other responsive mechanisms:
 |---|---|---|---|---|---|---|---|---|
 | — | Hero | `top` | "INDEX — 01" (left metadata) | "Security Engineer" | "Securing endpoints, strengthening operations, and reducing exposure across complex environments." | Asymmetric. Right-aligned text on md and up. 3 / 9 split | Radial glow, vertical rule, `min-h-[100svh]` | CTA hover, scroll cue |
 | 02 | About | `about` | "02" | "About" | "Engineering controls, shaped by the SOC floor." | Sticky index, content column | Ink | Focus rule expands on hover |
-| 03 | Skills | `skills` | "03" | "Technical Skills" | "Tools I use to see, control, and verify the estate." | Sticky index, two-column rows | Ink | Items turn accent on hover |
+| 03 | Skills | `skills` | "03" | "Technical Skills" | "Technologies and tools I use across enterprise security environments." | Sticky index, two-column rows | Ink | Items turn accent on hover |
 | 04 | Experience | `experience` | "04" | "Experience" | "Where the work has taken me." | Timeline | Ink | Staggered reveal |
 | 05 | Projects | `projects` | "05" | "Projects" | "Selected security engineering work." | Numbered rows | Ink | Title turns accent; tags highlight on row hover |
 | 06 | Certifications | `certifications` | "06" | "Certifications" | "Credentials that back up the practice." | One column, then two-column cells | Ink; cells hover charcoal | Cell background and number accent on hover |

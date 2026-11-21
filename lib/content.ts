@@ -44,14 +44,11 @@ export const about = {
 };
 
 
-
-
 export const skillGroups = [
   {
     title: "Endpoint Management & Security Platforms",
     items: [
       "HCL BigFix",
-      "BigFix Compliance",
       "SentinelOne",
       "Trend Micro Deep Security",
       "Zscaler",
@@ -66,27 +63,39 @@ export const skillGroups = [
     ],
   },
   {
+    title: "IT Asset Management & Discovery",
+    items: [
+      "BMC Discovery",
+    ],
+  },
+  {
     title: "Security Monitoring & SIEM",
     items: [
       "ELK Stack",
       "IBM QRadar",
       "Log Analysis",
       "Alert Triage",
+      "Security Event Monitoring",
+      "Incident Investigation",
+      "Incident Escalation",
     ],
   },
   {
-    title: "Vulnerability & Compliance",
+    title: "Vulnerability Management & Compliance",
     items: [
+      "HCL BigFix Compliance",
       "Nessus",
+      "Vulnerability Assessment (VA)",
+      "Vulnerability Remediation",
       "Security Compliance",
-      "LAPS",
+      "Microsoft LAPS",
       "BitLocker",
     ],
   },
   {
     title: "Network & Access Security",
     items: [
-      "Forescout",
+      "Forescout (NAC)",
       "Check Point VPN",
       "Firewall",
     ],
@@ -94,9 +103,9 @@ export const skillGroups = [
   {
     title: "Remote Administration",
     items: [
-      "PuTTY",
       "BigFix Remote Control",
       "IntelliAdmin",
+      "PuTTY",
       "Remote Desktop Protocol (RDP)",
       "TeamViewer",
     ],
@@ -115,11 +124,13 @@ export const skillGroups = [
     items: [
       "PowerShell",
       "Bash",
+      "Windows Batch / CMD",
       "BigFix Relevance",
       "BigFix Action Script",
     ],
   },
 ];
+
 
 export const experience = [
   {

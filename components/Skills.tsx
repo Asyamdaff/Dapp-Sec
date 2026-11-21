@@ -9,7 +9,7 @@ export default function Skills() {
       id="skills"
       index="03"
       eyebrow="Technical Skills"
-      title="Tools I use to see, control, and verify the estate."
+      title="Technologies and tools I use across enterprise security environments."
     >
       <ul className="divide-y divide-white/[0.08] border-y border-white/[0.08]">
         {skillGroups.map((group, i) => (
