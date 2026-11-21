@@ -591,7 +591,7 @@ Other responsive mechanisms:
 
 | # | Section | Id | Index | Eyebrow | Heading | Layout | Background | Interactions |
 |---|---|---|---|---|---|---|---|---|
-| — | Hero | `top` | "INDEX — 01" (left metadata) | "Security Engineer" | "Securing endpoints, operations, and exposure across complex environments." | Asymmetric. Right-aligned text on md and up. 3 / 9 split | Radial glow, vertical rule, `min-h-[100svh]` | CTA hover, scroll cue |
+| — | Hero | `top` | "INDEX — 01" (left metadata) | "Security Engineer" | "Securing endpoints, strengthening operations, and reducing exposure across complex environments." | Asymmetric. Right-aligned text on md and up. 3 / 9 split | Radial glow, vertical rule, `min-h-[100svh]` | CTA hover, scroll cue |
 | 02 | About | `about` | "02" | "About" | "Engineering controls, shaped by the SOC floor." | Sticky index, content column | Ink | Focus rule expands on hover |
 | 03 | Skills | `skills` | "03" | "Technical Skills" | "Tools I use to see, control, and verify the estate." | Sticky index, two-column rows | Ink | Items turn accent on hover |
 | 04 | Experience | `experience` | "04" | "Experience" | "Where the work has taken me." | Timeline | Ink | Staggered reveal |

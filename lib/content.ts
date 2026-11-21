@@ -23,16 +23,18 @@ export const nav = [
 
 export const hero = {
   eyebrow: "Security Engineer",
-  headline: "Securing endpoints, operations, and exposure across complex environments.",
+  headline: "Securing endpoints, strengthening operations, and reducing exposure across complex environments.",
   bio:
     "I work across enterprise endpoint and server Security Engineering, focusing on endpoint management, security compliance, and vulnerability remediation. My experience includes administering HCL BigFix, developing custom Fixlets and Analyses, implementing security solutions, and supporting Security Engineering through monitoring, troubleshooting, and automation.",
 };
 
 
+
+
 export const about = {
   paragraphs: [
-    "My work focuses on enterprise endpoint and server security, combining endpoint management, security engineering, and vulnerability remediation. I specialize in HCL BigFix administration, developing custom Fixlets and Analyses, implementing security solutions, and maintaining visibility and compliance across diverse environments.",
-    "At PT Q2 Technologies (CTI Group), assigned to CIMB Niaga, I manage day-to-day BigFix operations, troubleshoot endpoint management infrastructure, coordinate security deployments, and support remediation initiatives across Windows, Linux, Unix, and macOS environments. My earlier experience as an L1 SOC Analyst also provided a foundation in SIEM monitoring, alert triage, log analysis, and security incident investigation.",
+    "With 2+ years of professional experience in cybersecurity, my work focuses on enterprise endpoint and server security, with an emphasis on endpoint management, security compliance, and vulnerability remediation. My experience includes administering HCL BigFix, developing custom Fixlets and Analyses, implementing security solutions, and maintaining endpoint visibility and compliance across diverse environments.",
+    "At PT Q2 Technologies (CTI Group), assigned to CIMB Niaga, I handle day-to-day BigFix operations, troubleshoot endpoint management infrastructure, coordinate security deployments, and support remediation initiatives across Windows, Linux, Unix, and macOS environments. My earlier experience as an L1 SOC Analyst also provided a foundation in SIEM monitoring, alert triage, log analysis, and security incident investigation.",
   ],
   focus: [
     "Endpoint Security & Management",
@@ -130,7 +132,7 @@ export const experience = [
     points: [
       "Perform housekeeping across enterprise endpoints and servers to maintain system performance and operational stability.",
       "Troubleshoot and upgrade HCL BigFix agents across endpoint and server environments to improve security compatibility and maintain reliable operations.",
-      "Develop custom Fixlets and Analyses using BigFix Relevance to support security software deployments, endpoint visibility, and compliance monitoring.",
+      "Develop and maintain custom BigFix Fixlets and Analyses using Relevance and Action Script to support security application deployment, endpoint visibility, and compliance monitoring.",
       "Create custom Analyses to identify macOS local administrator accounts and endpoint hard disk types for asset visibility and inventory management.",
       "Develop and test Fixlets for deploying and updating security applications, including Forcepoint DLP, Zscaler, BMC, SentinelOne, and TMDS across endpoints and servers.",
       "Collaborate with internal and security application teams to validate Fixlets and coordinate security tool deployments before production rollout.",
@@ -219,7 +221,14 @@ export type Certification = {
   image: string; // Path under /public
 };
 
+
 export const certifications: Certification[] = [
+  {
+  name: "Certified Blue Team Fundamentals (BTF)",
+  issuer: "Cyberwarfare Labs",
+  issued: "Nov 2026",
+  image: "/certificates/CBTF.png",
+},
   {
     name: "HCL BigFix Foundation",
     issuer: "HCL Software",
@@ -243,5 +252,50 @@ export const certifications: Certification[] = [
     issuer: "HCL Software",
     issued: "Jul 2024",
     image: "/certificates/bigfix-relevance.png",
+  },
+  {
+    name: "Vulnerability Management Foundations",
+    issuer: "Qualys",
+    issued: "Nov 2026",
+    image: "/certificates/QualysVMF.png",
+  },
+  {
+    name: "Vulnerability Management Detection and Response",
+    issuer: "Qualys",
+    issued: "Nov 2026",
+    image: "/certificates/QualysVMDR.png",
+  },
+  {
+    name: "Certified Cyber Security Analyst (C3SA)",
+    issuer: "CyberWarFare Labs",
+    issued: "May 2025",
+    image: "/certificates/C3SA.png",
+  },
+  {
+    name: "Ethical Hacking Essentials (EHE)",
+    issuer: "CodeRed",
+    issued: "Jun 2024",
+    image: "/certificates/EHE.png",
+  },
+  {
+    name: "Cybersecurity Awareness Professional Certification (CAPC™)",
+    issuer: "CertiProf",
+    issued: "Sep 2024",
+    expires: "Sep 2027",
+    image: "/certificates/CAPC.png",
+  },
+  {
+    name: "NSE 2 Network Security Associate",
+    issuer: "Fortinet",
+    issued: "Sep 2023",
+    expires: "Sep 2025",
+    image: "/certificates/NSE2.png",
+  },
+  {
+    name: "L1 SOC Analyst",
+    issuer: "Jadi Hacker",
+    issued: "Oct 2023",
+    expires: "Oct 2024",
+    image: "/certificates/L1SOC.png",
   },
 ];

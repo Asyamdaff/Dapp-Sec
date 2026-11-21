@@ -1,10 +1,10 @@
+
 import Section from "./Section";
 import Reveal from "./Reveal";
 import { site } from "@/lib/content";
 
 export default function Contact() {
   const links = [
-    { label: "Email", value: site.email, href: `mailto:${site.email}`, external: false },
     {
       label: "LinkedIn",
       value: site.linkedin.replace(/^https?:\/\/(www\.)?/, ""),
@@ -20,15 +20,32 @@ export default function Contact() {
   ];
 
   return (
-    <Section id="contact" index="07" eyebrow="Contact" title="Open to security engineering conversations.">
+    <Section
+      id="contact"
+      index="07"
+      eyebrow="Contact"
+      title="Open to security engineering conversations."
+    >
       <Reveal>
         <p className="max-w-xl text-xl leading-relaxed text-white md:text-2xl md:leading-relaxed">
-          For roles, collaboration, or a technical conversation about Endpoint Security & Management, Security Engineering, or
-          vulnerability management, email is the best route.
+          For roles, collaboration, or technical discussions around Endpoint
+          Security & Management, Security Engineering, and vulnerability
+          management, feel free to reach out via LinkedIn.
         </p>
-        <a href={`mailto:${site.email}`} className="btn-primary group mt-10">
+
+        <a
+          href={`${site.linkedin}/`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-primary group mt-10"
+        >
           Start a conversation
-          <span aria-hidden className="transition-transform duration-500 group-hover:translate-x-1">→</span>
+          <span
+            aria-hidden
+            className="transition-transform duration-500 group-hover:translate-x-1"
+          >
+            →
+          </span>
         </a>
       </Reveal>
 
@@ -42,10 +59,18 @@ export default function Contact() {
                 rel={l.external ? "noopener noreferrer" : undefined}
                 className="group flex items-center justify-between gap-6 py-6"
               >
-                <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-slate-500">{l.label}</span>
+                <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-slate-500">
+                  {l.label}
+                </span>
+
                 <span className="flex items-center gap-3 text-base text-white transition-colors duration-500 group-hover:text-accent md:text-lg">
                   <span className="link-line">{l.value}</span>
-                  <span aria-hidden className="transition-transform duration-500 group-hover:translate-x-1">→</span>
+                  <span
+                    aria-hidden
+                    className="transition-transform duration-500 group-hover:translate-x-1"
+                  >
+                    →
+                  </span>
                 </span>
               </a>
             </li>
