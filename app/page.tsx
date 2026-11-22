@@ -1,6 +1,7 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import CompanyMarquee from "@/components/CompanyMarquee";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
@@ -17,20 +18,29 @@ export default function Home() {
       >
         Skip to content
       </a>
+
       <Nav />
+
       <main id="main">
         <Hero />
         <About />
+        <CompanyMarquee />
         <Skills />
         <Experience />
         <Projects />
         <Certifications />
         <Contact />
       </main>
+
       <footer className="border-t border-white/[0.06] px-6 py-8 text-xs text-slate-500 md:px-12">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 md:flex-row">
-          <p>© {new Date().getFullYear()} {site.name}</p>
-          <p className="font-mono">Built with Next.js, React, TypeScript &amp; Tailwind CSS</p>
+          <p>
+            © {new Date().getFullYear()} {site.name}
+          </p>
+
+          <p className="font-mono">
+            Built with Next.js, React, TypeScript &amp; Tailwind CSS
+          </p>
         </div>
       </footer>
     </>

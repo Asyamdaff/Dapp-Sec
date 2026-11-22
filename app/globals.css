@@ -56,6 +56,49 @@
   .link-line:hover {
     background-size: 100% 1px;
   }
+
+  /* Company Logo Marquee */
+  .logo-marquee-mask {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .logo-marquee-track {
+    display: flex;
+    width: max-content;
+    animation: logo-marquee 35s linear infinite;
+    will-change: transform;
+  }
+
+  .logo-marquee-reverse {
+    animation-name: logo-marquee-reverse;
+    animation-duration: 42s;
+  }
+
+  .logo-marquee-mask:hover .logo-marquee-track {
+    animation-play-state: paused;
+  }
+}
+
+/* Company Logo Marquee Animations */
+@keyframes logo-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes logo-marquee-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }
 
 /* Reveal only hides content when JS is running, so no-JS visitors still see everything. */
