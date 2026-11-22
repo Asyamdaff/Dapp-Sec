@@ -32,6 +32,10 @@ const logos = [
     name: "PT Sarana Multi Infrastruktur",
     src: "/logos/smi.png",
   },
+    {
+    name: "PT Pos Indonesia (Persero)",
+    src: "/logos/posind.png",
+  },
 ];
 
 export default function CompanyMarquee() {
