@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -29,16 +28,24 @@ export default function Certifications() {
             as="li"
             key={c.name}
             delay={Math.min(i * 60, 300)}
-            className="bg-ink"
+            className="group bg-ink"
           >
-            <div className="group flex h-full items-center gap-6 p-6 transition-colors duration-500 hover:bg-charcoal md:p-8">
-              <CertificateThumbnail src={c.image} alt={c.name} />
+            <div className="flex h-full items-center gap-6 border border-transparent p-6 transition-all duration-500 hover:border-accent/20 hover:bg-charcoal md:p-8">
+              {/* Certificate Thumbnail */}
+              <div className="shrink-0 overflow-hidden rounded-xl [&_img]:transition-transform [&_img]:duration-500 group-hover:[&_img]:scale-105">
+                <CertificateThumbnail src={c.image} alt={c.name} />
+              </div>
 
+              {/* Certificate Information */}
               <div className="min-w-0 flex-1">
-                <p className="text-lg text-white">{c.name}</p>
-                <p className="mt-1 text-sm text-slate-500">
+                <p className="text-lg text-white transition-colors duration-300 group-hover:text-accent">
+                  {c.name}
+                </p>
+
+                <p className="mt-1 text-sm text-slate-500 transition-colors duration-300 group-hover:text-slate-400">
                   {c.issuer}
                 </p>
+
                 <p className="mt-3 font-mono text-[11px] tracking-wide text-slate-600">
                   {c.expires
                     ? `Issued ${c.issued} · Expires ${c.expires}`
@@ -46,6 +53,7 @@ export default function Certifications() {
                 </p>
               </div>
 
+              {/* Certificate Number */}
               <span
                 aria-hidden
                 className="self-start font-mono text-xs text-slate-600 transition-colors duration-500 group-hover:text-accent"
@@ -57,6 +65,7 @@ export default function Certifications() {
         ))}
       </ul>
 
+      {/* Show All / Show Less */}
       {certifications.length > INITIAL_VISIBLE && (
         <div className="mt-8 flex justify-center">
           <button
@@ -71,7 +80,7 @@ export default function Certifications() {
 
             <span
               aria-hidden
-              className={`transition-transform duration-300 ${
+              className={`transition-transform duration-300 group-hover:translate-y-0.5 ${
                 showAll ? "rotate-180" : ""
               }`}
             >

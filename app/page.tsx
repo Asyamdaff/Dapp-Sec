@@ -45,9 +45,7 @@ export default function Home() {
           <Projects />
         </div>
 
-        <div className="reveal">
-          <Certifications />
-        </div>
+        <Certifications />
 
         <div className="reveal">
           <Contact />

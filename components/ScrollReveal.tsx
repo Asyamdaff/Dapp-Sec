@@ -6,11 +6,11 @@ export default function ScrollReveal() {
   useEffect(() => {
     document.documentElement.classList.add("js");
 
-    const elements = document.querySelectorAll(".reveal");
-
     const reduceMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
     ).matches;
+
+    const elements = document.querySelectorAll(".reveal");
 
     if (reduceMotion || !("IntersectionObserver" in window)) {
       elements.forEach((element) => {
@@ -36,9 +36,42 @@ export default function ScrollReveal() {
       }
     );
 
-    elements.forEach((element) => observer.observe(element));
+    // Observe existing and newly added reveal elements.
+    const observeRevealElements = (root: ParentNode) => {
+      if (
+        root instanceof Element &&
+        root.matches(".reveal")
+      ) {
+        observer.observe(root);
+      }
 
-    return () => observer.disconnect();
+      root.querySelectorAll(".reveal").forEach((element) => {
+        observer.observe(element);
+      });
+    };
+
+    observeRevealElements(document);
+
+    // Detect elements dynamically added to the page.
+    const mutationObserver = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        mutation.addedNodes.forEach((node) => {
+          if (node instanceof Element) {
+            observeRevealElements(node);
+          }
+        });
+      });
+    });
+
+    mutationObserver.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
+
+    return () => {
+      observer.disconnect();
+      mutationObserver.disconnect();
+    };
   }, []);
 
   return null;
