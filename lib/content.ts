@@ -196,33 +196,68 @@ export const experience = [
   },
 ];
 
+
 export const projects = [
   {
     title: "Enterprise Endpoint Security & Management",
-    tags: ["HCL BigFix", "SentinelOne", "Zscaler"],
-    body: "Endpoint Security & Management program covering protection, device posture, and access controls across an enterprise fleet.",
+    tags: [
+      "HCL BigFix",
+      "SentinelOne",
+      "Trend Micro Deep Security",
+      "Zscaler",
+      "Forcepoint DLP",
+    ],
+    body: "Supporting enterprise endpoint and server security operations through endpoint management, security application maintenance, agent health monitoring, and security configuration across complex environments.",
   },
   {
-    title: "Custom BigFix Fixlets",
-    tags: ["BigFix", "PowerShell", "Bash"],
-    body: "Purpose-built Fixlets for patching, configuration enforcement, and remediation of recurring endpoint findings.",
+    title: "Custom BigFix Fixlet Development",
+    tags: [
+      "HCL BigFix",
+      "BigFix Relevance",
+      "BigFix Action Script",
+      "Custom Analyses",
+      "PowerShell",
+      "Bash",
+    ],
+    body: "Developing and testing custom BigFix Fixlets and Analyses to support security application deployment, endpoint configuration, inventory visibility, and compliance monitoring.",
   },
   {
-    title: "Security Compliance Reporting",
-    tags: ["BigFix Compliance", "Relevance", "Reporting"],
-    body: "Compliance reporting that maps endpoint state to internal security baselines, giving stakeholders a clear picture of posture.",
+    title: "Security Compliance & Posture Reporting",
+    tags: [
+      "HCL BigFix Compliance",
+      "Security Compliance",
+      "LAPS",
+      "BitLocker",
+      "Compliance Reporting",
+    ],
+    body: "Supporting endpoint and server security compliance through posture monitoring, configuration reporting, inventory validation, and security baseline visibility.",
   },
   {
-    title: "Endpoint Deployment",
-    tags: ["Windows", "macOS", "Linux"],
-    body: "Deployment and onboarding of security agents across Windows, macOS, and Linux endpoints.",
+    title: "Endpoint & Server Deployment",
+    tags: [
+      "Windows",
+      "Windows Server",
+      "macOS",
+      "Linux",
+      "Unix",
+      "Security Agent Deployment",
+    ],
+    body: "Supporting security agent deployment, onboarding, upgrades, and troubleshooting across Windows, macOS, Linux, and Unix endpoint and server environments.",
   },
   {
-    title: "Security Monitoring",
-    tags: ["ELK Stack", "IBM QRadar", "SIEM"],
-    body: "Log collection, correlation, and dashboards supporting detection and investigation of endpoint and network activity.",
+    title: "Security Monitoring & Incident Investigation",
+  tags: [
+    "ELK Stack",
+    "IBM QRadar",
+    "Log Analysis",
+    "Alert Triage",
+    "Incident Investigation",
+    "Incident Escalation",
+  ],
+    body: "Performing SIEM monitoring, alert triage, log analysis, and initial incident investigation to support the detection, assessment, and escalation of endpoint and network security events.",
   },
 ];
+
 
 export type Certification = {
   name: string;
