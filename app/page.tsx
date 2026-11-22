@@ -27,9 +27,7 @@ export default function Home() {
       <main id="main">
         <Hero />
 
-        <div className="reveal">
-          <About />
-        </div>
+        <About />
 
         <div className="reveal">
           <CompanyMarquee />

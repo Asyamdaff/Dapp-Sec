@@ -1,4 +1,3 @@
-
 import Section from "./Section";
 import Reveal from "./Reveal";
 import { skillGroups } from "@/lib/content";
@@ -25,11 +24,12 @@ export default function Skills() {
 
             <ul className="flex flex-wrap gap-x-8 gap-y-3">
               {group.items.map((item) => (
-                <li
-                  key={item}
-                  className="cursor-default text-sm text-white/90 transition-colors duration-300 hover:text-accent md:text-base"
-                >
-                  {item}
+                <li key={item} className="group">
+                  <span className="relative cursor-default text-sm text-white/90 transition-colors duration-300 group-hover:text-accent md:text-base">
+                    {item}
+
+                    <span className="absolute -bottom-1 left-0 h-px w-0 bg-accent transition-all duration-300 group-hover:w-full" />
+                  </span>
                 </li>
               ))}
             </ul>
