@@ -1,4 +1,3 @@
-
 import Section from "./Section";
 import Reveal from "./Reveal";
 import { site } from "@/lib/content";
@@ -9,13 +8,11 @@ export default function Contact() {
       label: "LinkedIn",
       value: site.linkedin.replace(/^https?:\/\/(www\.)?/, ""),
       href: site.linkedin,
-      external: true,
     },
     {
       label: "GitHub",
       value: site.github.replace(/^https?:\/\/(www\.)?/, ""),
       href: site.github,
-      external: true,
     },
   ];
 
@@ -26,48 +23,56 @@ export default function Contact() {
       eyebrow="Contact"
       title="Open to security engineering conversations."
     >
+      {/* Contact Introduction */}
       <Reveal>
         <p className="max-w-xl text-xl leading-relaxed text-white md:text-2xl md:leading-relaxed">
-          For roles, collaboration, or technical discussions around Endpoint
-          Security & Management, Security Engineering, and vulnerability
-          management, feel free to reach out via LinkedIn.
+          I'm open to professional opportunities, collaborations, and
+          technical discussions in cybersecurity, particularly Endpoint
+          Security & Management, Security Engineering, and Vulnerability
+          Management. Feel free to connect with me on LinkedIn.
         </p>
 
+        {/* Primary CTA */}
         <a
-          href={`${site.linkedin}/`}
+          href={site.linkedin}
           target="_blank"
           rel="noopener noreferrer"
           className="btn-primary group mt-10"
         >
-          Start a conversation
+          <span>Start a conversation</span>
+
           <span
             aria-hidden
-            className="transition-transform duration-500 group-hover:translate-x-1"
+            className="transition-transform duration-500 group-hover:translate-x-1.5"
           >
             →
           </span>
         </a>
       </Reveal>
 
+      {/* Social Links */}
       <Reveal delay={150}>
         <ul className="mt-20 divide-y divide-white/[0.08] border-y border-white/[0.08]">
-          {links.map((l) => (
-            <li key={l.label}>
+          {links.map((link) => (
+            <li key={link.label}>
               <a
-                href={l.href}
-                target={l.external ? "_blank" : undefined}
-                rel={l.external ? "noopener noreferrer" : undefined}
-                className="group flex items-center justify-between gap-6 py-6"
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-between gap-6 px-3 py-6 transition-colors duration-500 hover:bg-white/[0.015] sm:px-4"
               >
-                <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-slate-500">
-                  {l.label}
+                <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-slate-500 transition-colors duration-300 group-hover:text-accent">
+                  {link.label}
                 </span>
 
-                <span className="flex items-center gap-3 text-base text-white transition-colors duration-500 group-hover:text-accent md:text-lg">
-                  <span className="link-line">{l.value}</span>
+                <span className="flex min-w-0 items-center gap-3 text-base text-white transition-colors duration-500 group-hover:text-accent md:text-lg">
+                  <span className="link-line truncate">
+                    {link.value}
+                  </span>
+
                   <span
                     aria-hidden
-                    className="transition-transform duration-500 group-hover:translate-x-1"
+                    className="shrink-0 transition-transform duration-500 group-hover:translate-x-1.5"
                   >
                     →
                   </span>
