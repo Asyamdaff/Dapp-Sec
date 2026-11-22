@@ -7,6 +7,7 @@ import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Certifications from "@/components/Certifications";
 import Contact from "@/components/Contact";
+import ScrollReveal from "@/components/ScrollReveal";
 import { site } from "@/lib/content";
 
 export default function Home() {
@@ -21,15 +22,38 @@ export default function Home() {
 
       <Nav />
 
+      <ScrollReveal />
+
       <main id="main">
         <Hero />
-        <About />
-        <CompanyMarquee />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Certifications />
-        <Contact />
+
+        <div className="reveal">
+          <About />
+        </div>
+
+        <div className="reveal">
+          <CompanyMarquee />
+        </div>
+
+        <div className="reveal">
+          <Skills />
+        </div>
+
+        <div className="reveal">
+          <Experience />
+        </div>
+
+        <div className="reveal">
+          <Projects />
+        </div>
+
+        <div className="reveal">
+          <Certifications />
+        </div>
+
+        <div className="reveal">
+          <Contact />
+        </div>
       </main>
 
       <footer className="border-t border-white/[0.06] px-6 py-8 text-xs text-slate-500 md:px-12">
