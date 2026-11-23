@@ -72,12 +72,14 @@ export default function Hero() {
             >
               <span aria-hidden="true">
                 {headlineWords.map((word, index) => (
-                  <span
-                    key={`${word}-${index}`}
-                    className="hero-headline-word"
-                    style={{ animationDelay: `${index * 55}ms` }}
-                  >
-                    {word}{" "}
+                  <span key={`${word}-${index}`}>
+                    <span
+                      className="hero-headline-word"
+                      style={{ animationDelay: `${index * 55}ms` }}
+                    >
+                      {word}
+                    </span>
+                    {index < headlineWords.length - 1 ? " " : ""}
                   </span>
                 ))}
               </span>
